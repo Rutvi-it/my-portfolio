@@ -237,3 +237,32 @@ footer {
   color: white;
   margin-top: 50px;
 }
+/* ==== Contact Form ==== */
+form {
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+  border: 1px solid var(--primary-end);
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+
+.dark-mode form input,
+.dark-mode form textarea {
+  background: #2a2a2a;
+  color: var(--text-dark);
+  border: 1px solid #555;
+}

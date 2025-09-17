@@ -1,46 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Rutvi Patel</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <header>
-    <nav>
-      <h2 class="logo">Rutvi Patel</h2>
-      <ul id="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <button id="theme-btn" class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
-      </div>
-    </nav>
-  </header>
+<section>
+  <h1>Contact Me</h1>
+  <p>If you have any questions, feel free to reach out:</p>
 
-  <!-- Contact Section -->
-  <section>
-    <h1>Contact Me</h1>
-    <p>If you have any questions, feel free to reach out:</p>
-    <div class="card-container">
-      <div class="card"><h3>📧 Email</h3><p>rutvipatel-it@gmail.com</p></div>
-      <div class="card"><h3>📱 Phone</h3><p>987984321</p></div>
-      <div class="card"><h3>🏫 Department</h3><p>Information Technology</p></div>
-    </div>
-  </section>
+  <form id="contactForm" class="card" onsubmit="return validateForm()">
+    <label for="name">Full Name</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Rutvi Patel | Web Development Assignment</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
-</html>
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+    <label for="message">Message</label><br>
+    <textarea id="message" name="message" placeholder="Write your message" rows="5"></textarea><br><br>
+
+    <button type="submit" class="button">Send Message</button>
+  </form>
+
+  <div id="formMsg" style="margin-top:20px; font-weight:bold;"></div>
+</section>
