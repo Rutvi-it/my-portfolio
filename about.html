@@ -7,49 +7,52 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navbar -->
   <header>
     <nav>
       <h2 class="logo">Rutvi Patel</h2>
       <ul id="menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html" class="active">About</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-actions">
-        <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+        <button id="theme-btn" class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
         <button class="menu-btn" onclick="toggleMenu()">☰</button>
       </div>
     </nav>
   </header>
 
+  <!-- About Section -->
   <section>
     <h1>About Me</h1>
     <p>
-      My name is <b>Rutvi Patel</b>. I am pursuing studies in the 
-      <b>Information Technology Department</b>.  
-      I am passionate about building responsive and user-friendly websites.
+      Hello! I’m <b>Rutvi Patel</b>, an IT student passionate about <b>web development</b>.  
+      I enjoy creating interactive and responsive websites that offer a seamless user experience.
     </p>
   </section>
 
   <section>
     <h2>Education</h2>
-    <ul style="max-width:600px;margin:auto;line-height:1.8;">
-      <li>B.Tech (Information Technology)</li>
-      <li>Web Development Coursework & Assignments</li>
-    </ul>
+    <div class="card-container">
+      <div class="card">🎓 B.Tech in Information Technology</div>
+      <div class="card">📘 Coursework: Web Development, Programming, Databases</div>
+      <div class="card">🏫 IT Department Student</div>
+    </div>
   </section>
 
   <section>
     <h2>Future Goals</h2>
     <p>
-      My goal is to enhance my skills in <b>front-end and back-end web development</b>, 
-      and contribute to innovative digital solutions in IT.
+      My aim is to become a <b>full-stack developer</b> and work on innovative IT projects.  
+      I also want to explore <b>cloud computing</b> and <b>AI-powered applications</b>.
     </p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Rutvi Patel | Web Development Assignment</p>
   </footer>
