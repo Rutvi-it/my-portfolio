@@ -239,25 +239,62 @@ footer {
 }
 /* ==== Contact Form ==== */
 form {
-  max-width: 500px;
-  margin: auto;
-  text-align: left;
+  max-width: 550px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: background 0.4s, color 0.4s;
 }
 
-form input, form textarea {
+form label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: var(--primary-start);
+}
+
+form input,
+form textarea {
   width: 100%;
-  padding: 12px;
-  margin-top: 8px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 10px;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
+  transition: 0.3s;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
   outline: none;
   border: 1px solid var(--primary-end);
-  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(142,148,251,0.5);
+}
+
+form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+#formMsg {
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Dark mode for form */
+.dark-mode form {
+  background: #1f1f1f;
+  color: var(--text-dark);
+  box-shadow: 0 6px 16px rgba(255,255,255,0.05);
+}
+
+.dark-mode form label {
+  color: var(--primary-end);
 }
 
 .dark-mode form input,
