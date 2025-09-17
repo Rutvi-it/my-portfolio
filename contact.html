@@ -1,19 +1,62 @@
-<section>
-  <h1>Contact Me</h1>
-  <p>If you have any questions, feel free to reach out:</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Rutvi Patel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">Rutvi Patel</div>
+      <ul id="menu">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-btn" class="toggle-btn" aria-label="Toggle theme">🌙</button>
+        <button id="menu-btn" class="menu-btn">☰</button>
+      </div>
+    </nav>
+  </header>
 
-  <form id="contactForm" class="card" onsubmit="return validateForm()">
-    <label for="name">Full Name</label><br>
-    <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+  <!-- Contact Section -->
+  <section>
+    <h1>Contact Me</h1>
+    <p>If you have any questions, feel free to reach out:</p>
 
-    <label for="email">Email</label><br>
-    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+      </div>
 
-    <label for="message">Message</label><br>
-    <textarea id="message" name="message" placeholder="Write your message" rows="5"></textarea><br><br>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+      </div>
 
-    <button type="submit" class="button">Send Message</button>
-  </form>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message"></textarea>
+      </div>
 
-  <div id="formMsg" style="margin-top:20px; font-weight:bold;"></div>
-</section>
+      <button type="submit" class="button">Send Message</button>
+      <p id="formMsg"></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Rutvi Patel | IT Department</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

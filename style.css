@@ -1,19 +1,11 @@
-/* ==== Google Fonts ==== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
+/* ==== Root Variables ==== */
 :root {
-  --primary-start: #4e54c8;
-  --primary-end: #8f94fb;
-  --light-bg: #f5f7ff;
+  --primary-start: #8e94fb;
+  --primary-end: #4e54c8;
+  --light-bg: #f8f9fc;
   --dark-bg: #121212;
-  --text-light: #222;
+  --text-light: #333;
   --text-dark: #f5f5f5;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -22,22 +14,11 @@ body {
   color: var(--text-light);
   line-height: 1.6;
   transition: background 0.4s, color 0.4s;
+  margin: 0;
 }
 
 .dark-mode {
   background: var(--dark-bg);
-  color: var(--text-dark);
-}
-
-/* Ensure all text adapts */
-h1, h2, h3, p {
-  transition: color 0.4s;
-}
-
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3,
-.dark-mode p {
   color: var(--text-dark);
 }
 
@@ -70,6 +51,8 @@ nav ul {
   display: flex;
   list-style: none;
   gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
@@ -147,80 +130,56 @@ nav ul li a.active::after {
   }
 }
 
-/* ==== Sections ==== */
+/* ==== Section ==== */
 section {
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: auto;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
   text-align: center;
 }
 
-h1, h2 {
-  margin-bottom: 20px;
-  font-weight: 700;
-  color: var(--primary-start);
+h1, h2, h3, p {
+  transition: color 0.4s;
 }
 
 .dark-mode h1,
-.dark-mode h2 {
-  color: var(--primary-end);
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p {
+  color: var(--text-dark);
 }
 
-p {
-  max-width: 700px;
-  margin: auto;
-  margin-bottom: 20px;
-  font-size: 1.1rem;
-}
-
-/* Alternate section background */
-section:nth-child(even) {
-  background: #fff;
-}
-
-.dark-mode section:nth-child(even) {
-  background: #1b1b1b;
-}
-
-/* ==== Buttons ==== */
-a.button, button.button {
-  display: inline-block;
-  padding: 12px 24px;
-  margin-top: 20px;
-  background: linear-gradient(90deg, var(--primary-start), var(--primary-end));
+/* ==== Hero Section ==== */
+.hero {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, var(--primary-start), var(--primary-end));
+  border-radius: 20px;
   color: white;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: 0.3s;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  margin-bottom: 40px;
 }
 
-a.button:hover, button.button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
 }
 
-/* ==== Cards ==== */
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  margin-top: 40px;
-}
-
+/* ==== Card ==== */
 .card {
   background: white;
-  color: var(--text-light);
   padding: 25px;
   border-radius: 15px;
+  margin: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: 0.3s;
-  border-top: 5px solid var(--primary-start);
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  min-width: 220px;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  transform: translateY(-6px);
 }
 
 .dark-mode .card {
@@ -229,14 +188,25 @@ a.button:hover, button.button:hover {
   border-top: 5px solid var(--primary-end);
 }
 
-/* ==== Footer ==== */
-footer {
-  text-align: center;
-  padding: 25px;
+/* ==== Buttons ==== */
+a.button,
+button.button {
+  display: inline-block;
   background: linear-gradient(90deg, var(--primary-start), var(--primary-end));
   color: white;
-  margin-top: 50px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
 }
+
+a.button:hover,
+button.button:hover {
+  opacity: 0.85;
+}
+
 /* ==== Contact Form ==== */
 form {
   max-width: 550px;
@@ -246,6 +216,11 @@ form {
   border-radius: 15px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.1);
   transition: background 0.4s, color 0.4s;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
 }
 
 form label {
@@ -259,7 +234,6 @@ form input,
 form textarea {
   width: 100%;
   padding: 14px 16px;
-  margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
   font-family: 'Poppins', sans-serif;
@@ -302,4 +276,13 @@ form textarea {
   background: #2a2a2a;
   color: var(--text-dark);
   border: 1px solid #555;
+}
+/* ==== Footer ==== */
+footer {
+  background: linear-gradient(90deg, var(--primary-start), var(--primary-end));
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 20px 20px 0 0;
 }
