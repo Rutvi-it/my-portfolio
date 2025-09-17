@@ -9,15 +9,19 @@
 <body>
   <header>
     <nav>
-      <h2>Rutvi Patel</h2>
-      <ul>
+      <h2 class="logo">Rutvi Patel</h2>
+      <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="nav-actions">
+        <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      </div>
     </nav>
   </header>
 
@@ -26,15 +30,15 @@
     <div class="card-container">
       <div class="card">
         <h3>Portfolio Website</h3>
-        <p>This portfolio website is created as part of my Web Development assignment.</p>
+        <p>A responsive portfolio created for Web Development assignment.</p>
       </div>
       <div class="card">
         <h3>To-Do App</h3>
-        <p>A simple task manager built using HTML, CSS, and JavaScript (practice project).</p>
+        <p>A task manager built using HTML, CSS, and JavaScript.</p>
       </div>
       <div class="card">
         <h3>Department Info Page</h3>
-        <p>A static site created to showcase IT Department details and activities.</p>
+        <p>A static site for IT Department activities and information.</p>
       </div>
     </div>
   </section>
@@ -42,5 +46,6 @@
   <footer>
     <p>© 2025 Rutvi Patel | Web Development Assignment</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

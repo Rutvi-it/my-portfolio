@@ -9,31 +9,36 @@
 <body>
   <header>
     <nav>
-      <h2>Rutvi Patel</h2>
-      <ul>
+      <h2 class="logo">Rutvi Patel</h2>
+      <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="nav-actions">
+        <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      </div>
     </nav>
   </header>
 
   <section>
     <h1>My Services</h1>
     <div class="card-container">
-      <div class="card">🌐 Website Development (HTML, CSS, JS)</div>
+      <div class="card">🌐 Website Development</div>
       <div class="card">🎨 Responsive Web Design</div>
-      <div class="card">⚡ Basic JavaScript Functionality</div>
+      <div class="card">⚡ JavaScript Interactivity</div>
       <div class="card">📂 GitHub Pages Deployment</div>
-      <div class="card">💻 IT Academic Support</div>
+      <div class="card">💻 Academic IT Support</div>
     </div>
   </section>
 
   <footer>
     <p>© 2025 Rutvi Patel | Web Development Assignment</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

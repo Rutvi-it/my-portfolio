@@ -9,49 +9,50 @@
 <body>
   <header>
     <nav>
-      <h2>Rutvi Patel</h2>
-      <ul>
+      <h2 class="logo">Rutvi Patel</h2>
+      <ul id="menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="nav-actions">
+        <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      </div>
     </nav>
   </header>
 
   <section>
     <h1>About Me</h1>
     <p>
-      My name is <b>Rutvi Patel</b>. I am currently pursuing studies in the 
+      My name is <b>Rutvi Patel</b>. I am pursuing studies in the 
       <b>Information Technology Department</b>.  
-      I am passionate about learning <b>web technologies</b> such as HTML, CSS, and JavaScript.
-    </p>
-    <p>
-      This portfolio project has been created to demonstrate my understanding of 
-      <b>front-end web development</b> as part of my <b>academic assignment</b>.
+      I am passionate about building responsive and user-friendly websites.
     </p>
   </section>
 
   <section>
     <h2>Education</h2>
     <ul style="max-width:600px;margin:auto;line-height:1.8;">
-      <li>Bachelor of Technology (Information Technology)</li>
-      <li>Web Development Coursework and Assignments</li>
+      <li>B.Tech (Information Technology)</li>
+      <li>Web Development Coursework & Assignments</li>
     </ul>
   </section>
 
   <section>
     <h2>Future Goals</h2>
     <p>
-      My goal is to enhance my skills in <b>web design, development, and responsive applications</b> 
-      to become a professional IT developer and contribute to innovative digital solutions.
+      My goal is to enhance my skills in <b>front-end and back-end web development</b>, 
+      and contribute to innovative digital solutions in IT.
     </p>
   </section>
 
   <footer>
     <p>© 2025 Rutvi Patel | Web Development Assignment</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

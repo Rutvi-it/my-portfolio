@@ -9,43 +9,35 @@
 <body>
   <header>
     <nav>
-      <h2>Rutvi Patel</h2>
-      <ul>
+      <h2 class="logo">Rutvi Patel</h2>
+      <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="nav-actions">
+        <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      </div>
     </nav>
   </header>
 
   <section>
     <h1>Contact Me</h1>
-    <p>
-      If you would like to get in touch regarding my academic work or projects, 
-      you can reach me using the details below:
-    </p>
-
+    <p>You can reach me for academic or project-related queries through:</p>
     <div class="card-container">
-      <div class="card">
-        <h3>📧 Email</h3>
-        <p>rutvipatel-it@gmail.com</p>
-      </div>
-      <div class="card">
-        <h3>📱 Phone</h3>
-        <p>987984321</p>
-      </div>
-      <div class="card">
-        <h3>🏫 Department</h3>
-        <p>Information Technology</p>
-      </div>
+      <div class="card"><h3>📧 Email</h3><p>rutvipatel-it@gmail.com</p></div>
+      <div class="card"><h3>📱 Phone</h3><p>987984321</p></div>
+      <div class="card"><h3>🏫 Department</h3><p>Information Technology</p></div>
     </div>
   </section>
 
   <footer>
     <p>© 2025 Rutvi Patel | Web Development Assignment</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
